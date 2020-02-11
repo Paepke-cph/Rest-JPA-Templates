@@ -11,8 +11,8 @@ import javax.persistence.*;
 #set ($lcName = ${NAME.toLowerCase()})
 
 @Entity
-@Table(name="$lcName")
-@NamedQuery(name = "${NAME}.deleteAllRows", query = "DELETE FROM $lcName")
+@Table(name="${NAME}")
+@NamedQuery(name = "${NAME}.deleteAllRows", query = "DELETE FROM ${NAME}")
 public class ${NAME} implements Serializable {
 
     private static final long serialVersionUID = 1L;
